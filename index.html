@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Servicios Generales</title>
+
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Submenú */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: #34495e;
+            top: 30px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            padding: 10px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ecf0f1;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        form button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Botón WhatsApp */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Mi Empresa</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#servicios">Servicios</a>
+                <ul>
+                    <li><a href="#">Jardinería</a></li>
+                    <li><a href="#">Mantenimiento</a></li>
+                    <li><a href="#">Limpieza</a></li>
+                </ul>
+            </li>
+            <li><a href="#quienes">Quiénes Somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h1>Bienvenido a Nuestra Empresa</h1>
+    <p>Servicios profesionales de mantenimiento y jardinería</p>
+</section>
+
+<section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Misión</h3>
+            <p>Brindar servicios de calidad.</p>
+        </div>
+        <div class="card">
+            <h3>Visión</h3>
+            <p>Ser líderes en el mercado.</p>
+        </div>
+        <div class="card">
+            <h3>Valores</h3>
+            <p>Responsabilidad, compromiso y calidad.</p>
+        </div>
+    </div>
+</section>
+
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Jardinería</h3>
+            <p>Cuidado de zonas verdes.</p>
+        </div>
+        <div class="card">
+            <h3>Mantenimiento</h3>
+            <p>Reparaciones generales.</p>
+        </div>
+        <div class="card">
+            <h3>Limpieza</h3>
+            <p>Servicios de aseo profesional.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Mi Empresa - Todos los derechos reservados</p>
+</footer>
+
+<a href="#" class="whatsapp">W</a>
+
+</body>
+</html>
