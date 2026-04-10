@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa Servicios Generales</title>
+    <title>Diseño Web Pro</title>
 
-    <!-- CSS -->
     <style>
         * {
             margin: 0;
@@ -19,7 +18,7 @@
         }
 
         header {
-            background: #2c3e50;
+            background: #0f172a;
             color: white;
             padding: 15px 0;
         }
@@ -36,7 +35,6 @@
         }
 
         nav ul li {
-            position: relative;
             margin: 0 15px;
         }
 
@@ -45,27 +43,29 @@
             text-decoration: none;
         }
 
-        /* Submenú */
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            background: #34495e;
-            top: 30px;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav ul li ul li {
-            padding: 10px;
-        }
-
         section {
-            padding: 40px;
+            padding: 50px 20px;
             text-align: center;
         }
 
+        /* HERO */
+        .hero {
+            background: #0f172a;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        /* CARDS */
         .cards {
             display: flex;
             justify-content: center;
@@ -79,12 +79,24 @@
             width: 250px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: 0.3s;
         }
 
         .card:hover {
             transform: scale(1.05);
         }
 
+        /* BENEFICIOS */
+        .beneficios ul {
+            list-style: none;
+        }
+
+        .beneficios li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* FORMULARIO */
         form {
             max-width: 400px;
             margin: auto;
@@ -98,109 +110,145 @@
         }
 
         form button {
-            background: #27ae60;
+            background: #25D366;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px;
+            border-radius: 5px;
         }
 
         footer {
-            background: #2c3e50;
+            background: #0f172a;
             color: white;
             text-align: center;
             padding: 20px;
         }
 
-        /* Botón WhatsApp */
+        /* BOTÓN WHATSAPP */
         .whatsapp {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: green;
+            background: #25D366;
             color: white;
             padding: 15px;
             border-radius: 50%;
             text-decoration: none;
+            font-size: 20px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <nav>
-        <h2>Mi Empresa</h2>
+        <h2>Diseño Web Pro</h2>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li>
-                <a href="#servicios">Servicios</a>
-                <ul>
-                    <li><a href="#">Jardinería</a></li>
-                    <li><a href="#">Mantenimiento</a></li>
-                    <li><a href="#">Limpieza</a></li>
-                </ul>
-            </li>
-            <li><a href="#quienes">Quiénes Somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#quienes">Sobre mí</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="inicio">
-    <h1>Bienvenido a Nuestra Empresa</h1>
-    <p>Servicios profesionales de mantenimiento y jardinería</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>Consigue más clientes con una página web profesional</h1>
+  <p>Diseño páginas web para negocios que quieren crecer, vender más y tener presencia en internet.</p>
+  
+  <a href="https://wa.me/573180960660" target="_blank" class="btn-whatsapp">
+    Solicitar información por WhatsApp
+  </a>
 </section>
 
+<!-- SOBRE MÍ -->
 <section id="quienes">
-    <h2>Quiénes Somos</h2>
+    <h2>Sobre mí</h2>
+
     <div class="cards">
         <div class="card">
-            <h3>Misión</h3>
-            <p>Brindar servicios de calidad.</p>
+            <h3>Enfoque</h3>
+            <p>Creo páginas web diseñadas para ayudarte a conseguir clientes y aumentar tus ventas.</p>
         </div>
+
         <div class="card">
-            <h3>Visión</h3>
-            <p>Ser líderes en el mercado.</p>
+            <h3>Trabajo rápido</h3>
+            <p>Entrego proyectos de forma ágil para que empieces a ver resultados lo antes posible.</p>
         </div>
+
         <div class="card">
-            <h3>Valores</h3>
-            <p>Responsabilidad, compromiso y calidad.</p>
+            <h3>Soluciones reales</h3>
+            <p>No solo diseño, creo herramientas que facilitan el contacto con tus clientes.</p>
         </div>
     </div>
 </section>
 
+<!-- SERVICIOS -->
 <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Jardinería</h3>
-            <p>Cuidado de zonas verdes.</p>
-        </div>
-        <div class="card">
-            <h3>Mantenimiento</h3>
-            <p>Reparaciones generales.</p>
-        </div>
-        <div class="card">
-            <h3>Limpieza</h3>
-            <p>Servicios de aseo profesional.</p>
-        </div>
+  <h2>Servicios</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Creación de páginas web</h3>
+      <p>Diseño páginas modernas, rápidas y adaptadas a celular.</p>
     </div>
+
+    <div class="card">
+      <h3>Automatización con WhatsApp</h3>
+      <p>Clientes pueden contactarte directamente sin complicaciones.</p>
+    </div>
+  </div>
 </section>
 
+<!-- BENEFICIOS -->
+<section class="beneficios">
+  <h2>¿Qué obtienes?</h2>
+
+  <ul>
+    <li>✔ Más clientes contactándote por WhatsApp</li>
+    <li>✔ Tu negocio visible en internet</li>
+    <li>✔ Atención automática sin perder oportunidades</li>
+    <li>✔ Imagen profesional que genera confianza</li>
+  </ul>
+</section>
+
+<!-- CONTACTO -->
 <section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="Mensaje"></textarea>
-        <button>Enviar</button>
+    <h2>Solicita tu página web</h2>
+
+    <form onsubmit="enviarWhatsApp(); return false;">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="negocio" placeholder="Tipo de negocio" required>
+        <textarea id="mensaje" placeholder="¿Qué necesitas?" required></textarea>
+        <button type="submit">Solicitar información</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2026 Mi Empresa - Todos los derechos reservados</p>
+    <p>© 2026 Diseño Web Pro - Todos los derechos reservados</p>
 </footer>
 
-<a href="#" class="whatsapp">W</a>
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/573180960660" target="_blank" class="whatsapp">
+    💬
+</a>
+
+<!-- SCRIPT -->
+<script>
+function enviarWhatsApp() {
+  let nombre = document.getElementById("nombre").value;
+  let negocio = document.getElementById("negocio").value;
+  let mensaje = document.getElementById("mensaje").value;
+
+  let texto = `Hola, soy ${nombre}. Tengo un negocio de ${negocio} y necesito una página web. Detalles: ${mensaje}`;
+
+  let url = "https://wa.me/573180960660?text=" + encodeURIComponent(texto);
+
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
