@@ -8,258 +8,143 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- ICONOS -->
-   <link rel="stylesheet" href="estilos.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
 
-    <!-- ANIMACIONES -->
+    <!-- AOS ANIMACIONES -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: #020617;
-            color: #e5e7eb;
-        }
-
-        header {
-            background: rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(10px);
-            padding: 15px 30px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav a {
-            color: #cbd5f5;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero {
-            background: radial-gradient(circle at top, #1e293b, #020617);
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #38bdf8;
-        }
-
-        .hero p {
-            margin-top: 15px;
-            color: #94a3b8;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: linear-gradient(135deg, #22c55e, #4ade80);
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #020617;
-            border: 1px solid #1e293b;
-            padding: 25px;
-            width: 260px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            border-color: #38bdf8;
-        }
-
-        h2 {
-            margin-bottom: 30px;
-            color: #38bdf8;
-        }
-
-        .beneficios ul {
-            list-style: none;
-        }
-
-        .beneficios li {
-            margin: 10px 0;
-            color: #94a3b8;
-        }
-
-        form {
-            max-width: 400px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        form input, form textarea {
-            margin: 10px 0;
-            padding: 12px;
-            background: #020617;
-            border: 1px solid #1e293b;
-            color: white;
-        }
-
-        form button {
-            background: #38bdf8;
-            border: none;
-            padding: 12px;
-            cursor: pointer;
-        }
-
-        footer {
-            background: #020617;
-            padding: 20px;
-        }
-
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            padding: 15px;
-            border-radius: 50%;
-            text-decoration: none;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
     <nav>
         <h2>Diseño Web Pro</h2>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#quienes">Sobre mí</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero" data-aos="fade-up">
-  <h1>Consigue más clientes con una página web profesional</h1>
-  <p>Diseño páginas web para negocios que quieren crecer y vender más</p>
-  
-  <a href="https://wa.me/573180960660" target="_blank" class="btn">
-    💬 Contactar por WhatsApp
-  </a>
+<section id="inicio" class="hero">
+    <div class="hero-contenido" data-aos="fade-up">
+        <h1>Impulsa tu negocio con una página web profesional</h1>
+        <p>Atrae más clientes, automatiza tu negocio y vende 24/7</p>
+
+        <a href="https://wa.me/573180960660" target="_blank" class="btn">
+            💬 Solicitar información
+        </a>
+    </div>
 </section>
 
-<!-- SOBRE MI -->
-<section id="quienes">
-    <h2 data-aos="fade-up">Sobre mí</h2>
+<!-- SECCIÓN SERVICIOS -->
+<section id="servicios">
+    <h2 data-aos="fade-up">Servicios</h2>
 
     <div class="cards">
+
         <div class="card" data-aos="fade-up">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Enfoque</h3>
-            <p>Páginas diseñadas para generar clientes.</p>
+            <img src="imagenes/servicio1.jpg" alt="Diseño web">
+            <h3>Diseño Web</h3>
+            <p>Páginas modernas, rápidas y adaptadas a cualquier dispositivo.</p>
         </div>
 
         <div class="card" data-aos="fade-up">
-            <i class="fas fa-rocket"></i>
-            <h3>Velocidad</h3>
-            <p>Entregas rápidas y eficientes.</p>
+            <img src="imagenes/servicio2.jpg" alt="Automatización">
+            <h3>Automatización</h3>
+            <p>Convierte visitantes en clientes directamente por WhatsApp.</p>
         </div>
 
         <div class="card" data-aos="fade-up">
-            <i class="fas fa-bolt"></i>
-            <h3>Resultados</h3>
-            <p>Más contactos y más ventas.</p>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+            <h3>Optimización</h3>
+            <p>Mejora el rendimiento y la velocidad de tu página web.</p>
         </div>
+
     </div>
 </section>
 
-<!-- SERVICIOS -->
-<section id="servicios">
-  <h2 data-aos="fade-up">Servicios</h2>
+<!-- SECCIÓN PROCESO -->
+<section id="proceso">
+    <h2 data-aos="fade-up">¿Cómo trabajamos?</h2>
 
-  <div class="cards">
-    <div class="card" data-aos="fade-up">
-      <h3>Creación web</h3>
-      <p>Páginas modernas y profesionales.</p>
-    </div>
+    <div class="cards">
 
-    <div class="card" data-aos="fade-up">
-      <h3>Automatización</h3>
-      <p>Clientes directos a tu WhatsApp.</p>
+        <div class="card" data-aos="fade-up">
+            <h3>1. Análisis</h3>
+            <p>Entendemos tu negocio y tus objetivos.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <h3>2. Diseño</h3>
+            <p>Creamos una web atractiva y enfocada en ventas.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <h3>3. Entrega</h3>
+            <p>Publicamos tu página lista para generar clientes.</p>
+        </div>
+
     </div>
-  </div>
 </section>
 
 <!-- BENEFICIOS -->
-<section class="beneficios">
-  <h2 data-aos="fade-up">¿Qué obtienes?</h2>
+<section id="beneficios">
+    <h2 data-aos="fade-up">¿Qué obtienes?</h2>
 
-  <ul>
-    <li data-aos="fade-up">✔ Más clientes</li>
-    <li data-aos="fade-up">✔ Presencia online</li>
-    <li data-aos="fade-up">✔ Negocio 24/7</li>
-    <li data-aos="fade-up">✔ Mayor confianza</li>
-  </ul>
+    <div class="cards">
+
+        <div class="card">✔ Más clientes</div>
+        <div class="card">✔ Presencia profesional</div>
+        <div class="card">✔ Negocio 24/7</div>
+        <div class="card">✔ Mayor confianza</div>
+
+    </div>
+</section>
+
+<!-- SECCIÓN IMPACTO (TIPO EMPRESA PRO) -->
+<section class="impacto">
+    <div class="impacto-contenido" data-aos="fade-up">
+        <h2>Haz crecer tu negocio hoy</h2>
+        <p>Una página web profesional puede marcar la diferencia entre perder clientes o multiplicarlos.</p>
+
+        <a href="https://wa.me/573180960660" target="_blank" class="btn">
+            💬 Empezar ahora
+        </a>
+    </div>
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto">
-    <h2 data-aos="fade-up">Solicita tu página</h2>
+    <h2 data-aos="fade-up">Solicita tu página web</h2>
 
     <form onsubmit="enviarWhatsApp(); return false;" data-aos="fade-up">
         <input type="text" id="nombre" placeholder="Nombre" required>
         <input type="text" id="negocio" placeholder="Tipo de negocio" required>
         <textarea id="mensaje" placeholder="¿Qué necesitas?" required></textarea>
-        <button type="submit">Solicitar</button>
+        <button type="submit">Enviar solicitud</button>
     </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Diseño Web Pro</p>
+    <p>© 2026 Diseño Web Pro - Todos los derechos reservados</p>
 </footer>
 
+<!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/573180960660" target="_blank" class="whatsapp">
 💬
 </a>
 
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 <script>
 AOS.init();
 
